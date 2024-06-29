@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Sidebar() {
@@ -9,14 +10,14 @@ function Sidebar() {
             <i className='bi bi-grid fs-5 me-2'></i>
             <span>Dashboard</span>
             </a>
-            <a className='list-group-item list-group-item-action border-0 active'>
+            <Link to="/" className='list-group-item list-group-item-action border-0'>
             <i className='bi bi-clipboard-data-fill fs-5 me-2'></i>
             <span>Admission</span>
-            </a>
-            <a className='list-group-item list-group-item-action border-0'>
+            </Link>
+            <Link to="/Faculty" className='list-group-item list-group-item-action border-0'>
             <i className='bi bi-file-text-fill fs-5 me-2'></i>
             <span>Faculty</span>
-            </a>
+            </Link>
             <a className='list-group-item list-group-item-action border-0'>
             <i className='bi bi-people-fill fs-5 me-2'></i>
             <span>Academics</span>

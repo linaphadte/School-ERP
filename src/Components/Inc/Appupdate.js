@@ -1,94 +1,93 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import profileimg from '../Images/profileimg.png';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 
-function Newapp() {
+
+
+function Appupdate() {
+    const [id, setId] = useState(0);
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
+    const [email, setEmail] = useState('');
+    const [birthdate, setBirthdate] = useState('');
   
-  const [firstname, setFirstname]= useState("")
-  const [middlename, setMiddlename]= useState("")
-  const [lastname, setLastname]= useState("")
-  const [email, setEmail]= useState("")
-  const [birthdate, setBirthdate]= useState("")
-  const [age, setAge]= useState("")
+    const navigate = useNavigate();
+
+  useEffect(() => {
+    setId(localStorage.getItem("id"))
+    setFirstname(localStorage.getItem("firstname"))
+    setLastname(localStorage.getItem("lastname"))
+    setBirthdate(localStorage.getItem("birthdate"))
+    setEmail(localStorage.getItem("email"))
+    
+  }, [])
   
-  const history= useNavigate();
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    axios.put(`https://667d5827297972455f64b4d3.mockapi.io/CRUD-schoolerp/${id}`,{
+      firstname: firstname,
+      lastname:lastname,
+      email:email,
+      birthdate: birthdate,
+    }
+    ).then(()=>{
+        navigate("/")
 
-
-    const header={"Access-Control-Allow-Origin":"*"};
-
-    const handleSave = (e) => {
-      e.preventDefault();
-      axios.post('https://667d5827297972455f64b4d3.mockapi.io/CRUD-schoolerp',{
-        firstname: firstname,
-        middlename:middlename,
-        lastname:lastname,
-        email:email,
-        birthdate: birthdate,
-        age: age,
-        header,
-      })
-
-      .then(()=>{
-        history("/");
-      });
-     
-    };
-  
-    const handleDiscard = () => {
-      // Logic to handle discarding the application
-      alert('Application discarded!');
-    };
+    })
+    }
+    
   
     return (
         <div className="container mt-2">
         <div className="d-flex justify-content-between align-items-center mb-3">
-          <h2>Add New Student</h2>
+          <h2>Update Form</h2>
           <div>
-            <button type="button" className="btn btn-success me-2" onClick={handleSave}>Save</button>
-            <button type="button" className="btn btn-danger" onClick={handleDiscard}>Discard</button>
+            <button type="button" className="btn btn-success me-2" onClick={handleUpdate}>Update</button>
           </div>
         </div>
   
         <div className="row">
           <div className="col-md-8">
             <form className="formfont row g-3">
-            <span ></span>
+            <span >Enter Personal details</span>
             <div className="col-md-6">
                 <label for="firstname" className="form-label">FIRST NAME</label>
                 <input type="text" className="form-control" 
                 id="firstname" required
+                value={firstname}
                 onChange={(e)=>setFirstname(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
                 <label for="middlename" className="form-label">MIDDLE NAME</label>
                 <input type="text" className="form-control" id="middlename"
-                onChange={(e)=>setMiddlename(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
                 <label for="lastname" className="form-label">LAST NAME</label>
                 <input type="text" className="form-control" id="lastname" required
+                value={lastname}
                 onChange={(e)=>setLastname(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
                 <label for="email" className="form-label">EMAIL</label>
                 <input type="email" className="form-control" id="email" required
+                value={email}
                 onChange={(e)=>setEmail(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
                 <label for="birthdate" className="form-label">DATE OF BIRTH</label>
                 <input type="date" className="form-control" id="birthdate"
+                value={birthdate}
                 onChange={(e)=>setBirthdate(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
                 <label for="age" className="form-label">AGE</label>
                 <input type="number" className="form-control" id="age" required
-                onChange={(e)=>setAge(e.target.value)}
                 />
             </div>
             <div className="col-md-6">
@@ -148,4 +147,4 @@ function Newapp() {
     );
   }
   
-  export default Newapp;
+  export default Appupdate;

@@ -4,10 +4,11 @@
   border-radius: 8px;
   
 }
-.sidebar .list-group .list-group-item.active {
+.sidebar .list-group .list-group-item-action .active{
   background-color: #33b864;
   color: white;
   border-radius: 8px;
+  
 }
 
 .new-app-btn{
@@ -65,3 +66,16 @@ body {
   width: fit-content;
 }
 
+.formfont{
+  font-size: 0.75rem;
+  
+}
+
+.card{
+  width:18rem;
+
+}
+
+.search-input{
+  width:800px;
+}
