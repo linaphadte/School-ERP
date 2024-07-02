@@ -101,24 +101,27 @@ school-erp/
 1. Navigate to the **Admission** section from the sidebar.
 2. You can view a list of all current students.
 
-![Admissions List](path/to/admissions-list-image.png)
+![Admissions List](https://github.com/linaphadte/School-ERP/blob/master/SSimages/studentprofile.png)
 
-#### Add New Student/Faculty
+#### Add New Student
 1. Click the **New Application** button and select Student from the dropdown.
 2. Fill out the form with the necessary information and click **Save**.
 
-![Add Admission Form](path/to/add-admission-form-image.png)
+![Add Admission Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/addstudent.png)
+![Add Admission Form ](https://github.com/linaphadte/School-ERP/blob/master/SSimages/addstudent2.png)
 
 #### Edit Admission
 1. Click the **Edit icon** button next to the Admission you want to edit.
 2. Update the necessary information and click **Update**.
 
-![Edit Admission Form](path/to/edit-admission-form-image.png)
+![Edit Admission Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/updatestudent.png)
+![Edit Admission Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/updatestudent2.png)
 
 #### Delete Admission
 1. Click the **Delete icon** button next to the admission you want to remove.
 
-![Delete Admission Confirmation](path/to/delete-admission-confirmation-image.png)
+![Delete Admission Confirmation](https://github.com/linaphadte/School-ERP/blob/master/SSimages/deletestudent.png)
+![Delete Admission Confirmation](https://github.com/linaphadte/School-ERP/blob/master/SSimages/deletestudent2.png)
 
 ### Faculty Page
 
@@ -126,33 +129,35 @@ school-erp/
 1. Navigate to the **Faculty** section from the sidebar.
 2. You can view a list of all faculty members.
 
-![Faculty List](path/to/faculty-list-image.png)
+![Faculty List](https://github.com/linaphadte/School-ERP/blob/master/SSimages/facultyprofile.png)
 
 #### Add Faculty
 1. Click the **New Application** button and select Faculty from the dropdown.
 2. Fill out the form with the necessary information and click **Save**.
 
-![Add Faculty Form](path/to/add-faculty-form-image.png)
+![Add Faculty Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/addfaculty.png)
 
 #### Edit Faculty
 1. Click the **Edit** button next to the faculty member you want to edit.
 2. Update the necessary information and click **Update**.
 
-![Edit Faculty Form](path/to/edit-faculty-form-image.png)
+![Edit Faculty Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/updatefaculty.png)
+![Edit Faculty Form](https://github.com/linaphadte/School-ERP/blob/master/SSimages/updatefaculty2.png)
 
 #### Delete Faculty
 1. Click the **Delete** button next to the faculty member you want to remove.
 
-![Delete Faculty Confirmation](path/to/delete-faculty-confirmation-image.png)
+![Delete Faculty Confirmation](https://github.com/linaphadte/School-ERP/blob/master/SSimages/deletefaculty.png)
 
 ## Future Development
 ### Planned Features
 
-- **Class Schedules**: Integrate a class scheduling system to manage timetables for students and teachers.
-- **Attendance Tracking**: Implement attendance tracking for students and faculty.
-- **Grade Management**: Develop a module to input, update, and view student grades.
-- **Notifications**: Add a notification system for important updates and announcements.
-- **Parent Portal**: Create a portal for parents to view their children's progress, attendance, and other relevant information.
+- **Academics Section:**: Class schedule, course management, student grades and assignments.
+- **Finance Section**: Fee management, expense tracking.
+- **Assets Section**: Inventory managment and maintenance requests.
+- **Calendar Section**: Event management and notifications.
+- **Settings Section**: User Role and permissions.
+  
 
 ### Enhancements
 - **User Interface Improvements**: Continuously refine the user interface for better usability and aesthetics.
