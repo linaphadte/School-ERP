@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Navbar({Toggle}) {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-white fixed-top">
+    <nav className="navbar navbar-expand-md navbar-light fixed-top">
       <div className="container-fluid m-2">
         <div className='m-2'>
             <i className='bi bi-justify left me-2 fs-5' onClick={Toggle}></i>
-            <span className='brandName fs-5'>SCHOOL-Name</span>
+            <span className='brandName fs-5'>SCHOOL-NAME</span>
         </div>
 
         <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

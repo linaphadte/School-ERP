@@ -8,6 +8,8 @@ import { Routes, Route } from 'react-router-dom';
 import Newapp from './Components/Inc/Newapp';
 import Newfaculty from './Components/Inc/Newfaculty';
 import Appupdate from './Components/Inc/Appupdate';
+import Facultyprofile from './Components/Inc/Facultyprofile';
+import Facultyupdate from './Components/Inc/Facultyupdate';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
               <Route path="/newapp" element={<Newapp />} />
               <Route path="/newfaculty" element={<Newfaculty/>}/>
               <Route path="/appupdate" element={<Appupdate/>}/>
+              <Route path="/facultyprofile" element={<Facultyprofile/>}/>
+              <Route path="/facultyupdate" element={<Facultyupdate />} />
             </Routes>
           </div>
         </div>
