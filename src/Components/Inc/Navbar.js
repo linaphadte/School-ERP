@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar({Toggle}) {
   return (
-    <nav className="navbar navbar-expand-md navbar-light fixed-top">
+    <nav className="navbar navbar-expand-md bg-light fixed-top shadow p-2 ">
       <div className="container-fluid m-2">
         <div className='m-2'>
             <i className='bi bi-justify left me-2 fs-5' onClick={Toggle}></i>
@@ -16,12 +16,12 @@ function Navbar({Toggle}) {
         </button>
 
         <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <form className="d-flex mx-auto my-2 my-md-0 position-relative">
-            <div className="input-group">
-              <span className="input-group-text bg-white border-1">
+          <form className="d-flex mx-auto my-2 my-md-0 position-relative ">
+            <div className="input-group border-primary">
+              <span className="input-group-text bg-white border-1 border-primary ">
                 <i className="bi bi-search"></i>
               </span>
-              <input className="form-control border-start-0 search-input" type="search" placeholder="Search" aria-label="Search" />
+              <input className="form-control border-start-0 search-input border-primary " type="search" placeholder="Search" aria-label="Search" />
             </div>
           </form>
         

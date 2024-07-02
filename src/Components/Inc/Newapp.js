@@ -119,7 +119,7 @@ function Newapp() {
           </div>
   
           <div className="col-md-4 d-flex flex-column align-items-end">
-            <div className="card text-center">
+            <div className="card text-center bg-light border-primary shadow p-2">
             <img src={profileimg} className="rounded-circle" alt="..."/>
             <button className="profile-btn mx-auto">Upload Photograph</button>
               <div className="card-body d-grid gap-2">

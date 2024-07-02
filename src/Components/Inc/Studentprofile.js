@@ -45,10 +45,7 @@ const Studentprofile = () =>{
         <div className="container mt-2">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <h2>Students Profile</h2>
-          <div>
-            <button type="button" className="btn btn-success me-2">Save</button>
-            <button type="button" className="btn btn-danger">Discard</button>
-          </div>
+          
         </div>
         <table class="table table-hover">
             <thead>
